@@ -4,7 +4,18 @@ export const navMenuData = [
     title: "Accounts",
     submenus: [
       {
-        label: "Balance & Transaction Info",
+        label: "Balance & Transaction ",
+        items: [
+          "Operative Accounts",
+          "Deposit Accounts",
+          "Loan Accounts",
+          "Accounts Summary",
+          "Tax Deducted at Source",
+          "Combined Statement",
+          "Balance Certificate",
+          "Add Nominee Details",
+        ],
+        label: "Interest Certificate ",
         items: [
           "Operative Accounts",
           "Deposit Accounts",

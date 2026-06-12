@@ -55,7 +55,7 @@ const DashboardLayout = ({ children }) => {
           <span style={{ color: "#666", fontSize: "10px" }}>▼</span>
           <button
             onClick={() => navigate("/")}
-            style={{ background: "#fff", color: "#cc0000", border: "2px solid #cc0000", padding: "4px 14px", fontSize: "13px", fontWeight: "600", cursor: "pointer", borderRadius: "2px", marginLeft: "2px" }}
+            style={{ background: "#fff", color: "#cc0000", background : "2px solid #cc0000", padding: "4px 14px", fontSize: "13px", fontWeight: "600", cursor: "pointer", borderRadius: "2px", marginLeft: "2px" }}
           >
             Logout
           </button>

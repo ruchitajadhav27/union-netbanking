@@ -19,7 +19,7 @@ const Dashboard = () => {
         </div>
 
         {/* Notifications widget */}
-        <div style={{ width: "370px", background: "#fff", border: "1px solid #ccc", boxShadow: "0 1px 3px rgba(0,0,0,0.08)" }}>
+        <div style={{ width: "320px", height: "350px", background: "#fff", border: "1px solid #ccc", boxShadow: "0 1px 3px rgba(0,0,0,0.08)" }}>
           {/* Header */}
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "6px 10px", borderBottom: "1px solid #ddd", background: "#fff" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
@@ -85,7 +85,7 @@ const Dashboard = () => {
                 </p>
                 <div style={{ display: "flex", justifyContent: "center" }}>
                   <button style={{
-                    background: "#7a9e3b",
+                    background: "#8faf58",
                     color: "#fff",
                     border: "none",
                     padding: "7px 20px",
