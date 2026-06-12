@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import "swiper/css";
 
 import s1 from "../assets/images/slider1.jpg";
@@ -14,13 +15,13 @@ import s8 from "../assets/images/slider8.png";
 const slides = [s1, s2, s3, s4, s5, s6, s7, s8];
 
 const links = [
-  { text: "Know Your User-ID",          red: false },
-  { text: "Retail User Login",           red: true  },
-  { text: "Corporate User Login",        red: true  },
-  { text: "Self User Creation",          red: false },
-  { text: "Forgot/Create Password",      red: false },
-  { text: "Password Creation Process",   red: false },
-  { text: "Register For Mobile Banking", red: false },
+  { text: "Know Your User-ID",          red: false, to: "#" },
+  { text: "Retail User Login",           red: true,  to: "/login" },
+  { text: "Corporate User Login",        red: true,  to: "/login" },
+  { text: "Self User Creation",          red: false, to: "#" },
+  { text: "Forgot/Create Password",      red: false, to: "#" },
+  { text: "Password Creation Process",   red: false, to: "#" },
+  { text: "Register For Mobile Banking", red: false, to: "#" },
 ];
 
 const SLIDER_H = 270;
@@ -92,19 +93,23 @@ export default function HeroSlider() {
 
         {/* LOGIN PANEL */}
         <div className="shrink-0 flex flex-col select-none" style={{ width: "270px", height: PANEL_H }}>
-          {links.map((link, i) => (
-            <a
-              key={i}
-              href="#"
-              className={`flex flex-1 items-center px-5 text-white text-[14px] font-semibold border-b border-white/20 transition-colors duration-150 ${
-                link.red
-                  ? "bg-[#e8131a] hover:bg-[#1a7bc4]"
-                  : "bg-[#1a7bc4] hover:bg-[#e8131a]"
-              }`}
-            >
-              <span>{link.text}</span>
-            </a>
-          ))}
+          {links.map((link, i) => {
+            const Component = link.to === "#" ? "a" : Link;
+            const props = link.to === "#" ? { href: "#" } : { to: link.to };
+            return (
+              <Component
+                key={i}
+                {...props}
+                className={`flex flex-1 items-center px-5 text-white text-[14px] font-semibold border-b border-white/20 transition-colors duration-150 ${
+                  link.red
+                    ? "bg-[#e8131a] hover:bg-[#1a7bc4]"
+                    : "bg-[#1a7bc4] hover:bg-[#e8131a]"
+                }`}
+              >
+                <span>{link.text}</span>
+              </Component>
+            );
+          })}
         </div>
 
       </div>
