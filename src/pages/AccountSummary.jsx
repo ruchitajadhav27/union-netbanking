@@ -104,7 +104,7 @@ const AccountSummary = () => {
               <tbody>
                 <tr style={{ borderBottom: "1px solid #e8e8e8" }}>
                   <td style={{ padding: "7px 10px", borderRight: "1px dashed #bbb", verticalAlign: "top" }}>
-                    <div style={{ color: "#0645ad", cursor: "pointer" }}>621702010002985</div>
+                    <div style={{ color: "#0645ad", cursor: "pointer", textDecoration: "underline" }} onClick={() => navigate("/account-details")}>621702010002985</div>
                     <div style={{ color: "#999", fontSize: "12px", marginTop: "2px" }}>PRASAD PRADIP WANKHADE</div>
                   </td>
                   <td style={{ padding: "7px 10px", borderRight: "1px dashed #bbb", verticalAlign: "top", color: "#333" }}>Savings</td>
@@ -127,6 +127,7 @@ const AccountSummary = () => {
                             style={{ padding: "6px 12px", fontSize: "12px", color: "#0645ad", cursor: "pointer", borderBottom: "1px solid #eee" }}
                             onMouseEnter={e => e.currentTarget.style.background = "#f5f5f5"}
                             onMouseLeave={e => e.currentTarget.style.background = "#fff"}
+                            onClick={() => { setShowActions(false); if (a === "Account Details") navigate("/account-details"); }}
                           >{a}</div>
                         ))}
                       </div>

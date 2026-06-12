@@ -18,6 +18,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import AccountSummary from "./pages/AccountSummary";
+import AccountDetails from "./pages/AccountDetails";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/account-summary" element={<AccountSummary />} />
+        <Route path="/account-details" element={<AccountDetails />} />
       </Routes>
     </BrowserRouter>
   );
