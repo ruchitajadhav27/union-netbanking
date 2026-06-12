@@ -9,18 +9,18 @@ export default function Header() {
       <div className="max-w-[1200px] mx-auto px-4 pt-10 pb-8 flex justify-between">
 
         {/* LEFT */}
-        <div className="flex items-start gap-8">
+        <div className="flex items-start gap-19">
 
           <img
             src={logo}
             alt="Union Bank"
-            className="h-[64px] object-contain mt-2"
+            className="h-[54px] object-contain mt-2"
           />
 
           <img
             src={logo1}
             alt="Azadi"
-            className="h-[58px] object-contain mt-0"
+            className="h-[54px] object-contain mt-0"
           />
 
         </div>
@@ -29,13 +29,13 @@ export default function Header() {
         <div className="flex items-start gap-10">
 
           {/* LANGUAGE */}
-          <div className="flex items-center mt-[18px]">
+          <div className="flex items-center mt-[28px]">
 
             <span className="text-[13px] text-black mr-1">
               Language:
             </span>
 
-            <select className="h-[28px] border border-gray-500 text-[13px] px-1 bg-white">
+            <select className="h-[20px] border border-gray-500 text-[13px] px-1 bg-white">
               <option>Choose Language</option>
               <option>English</option>
               <option>हिंदी</option>

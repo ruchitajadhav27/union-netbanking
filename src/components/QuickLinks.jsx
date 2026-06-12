@@ -67,7 +67,7 @@ export default function QuickLinks() {
 
       {/* Security Badges */}
       <div style={{ padding: "12px 16px", display: "flex", flexDirection: "column", alignItems: "flex-start", gap: "14px" }}>
-        <img src={globalsign} alt="GMO GlobalSign Secure" style={{ width: "155px", display: "block" }} />
+        <img src={globalsign} alt="GMO GlobalSign Secure" style={{ width: "125px", height: "70px", display: "block" }} />
         <img src={compliance} alt="PCI DSS Compliant" style={{ width: "130px", display: "block", marginLeft: "auto", marginRight: "auto", alignSelf: "center" }} />
       </div>
     </div>
