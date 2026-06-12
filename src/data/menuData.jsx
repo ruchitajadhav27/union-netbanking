@@ -1,0 +1,71 @@
+export const menuData = [
+  {
+    title: "User Guide & FAQs",
+    cols: 1,
+    items: [
+      "Tokenisation Product Features",
+      "FAQ's on Tokenisation",
+      "Writeup For Retail / Corporate Users",
+      "User Guide & FAQs",
+      "FAQs on Demat Account-CDSL",
+      "FAQs on Demat Account-NSDL",
+    ],
+  },
+  {
+    title: "Central / State Govt. Tax",
+    cols: 4,
+    items: [
+      "Direct Tax",        "Odisha Comm Tax",     "Bihar OGRAS Payments", "MH Mahakosh",
+      "AP Comm Tax",       "KA Comm Tax",         "MH VAT, CST & PT",     "MCA21",
+      "CG e-Challan",      "UP Tax & challan",    "Port Trust - PCS",     "MP Treasury",
+      "RJ Tax & challan",  "Custom Duty",         "MH e-SBTR",            "Uttarakhand Tax",
+      "Excise/Service Tax","DGFT",                "",                     "Rajasthan e-GRAS",
+    ],
+  },
+  {
+    title: "Fees / Bills",
+    cols: 3,
+    items: [
+      "GITAM | IGNOU | RGPV",        "EMI | Utility & Card Payments", "EPFO",
+      "Telephone / Mobile Bills",    "Municipal Corporations",        "ESIC",
+      "View Union Credit Card Bill", "Shopping | Entertainment",      "Insurance Premia | Mutual Fund",
+      "MP Online",                   "Nagar Nigams",                  "Tours & Travels",
+      "Maha Online",                 "SMS Medical College",           "Tax Payments",
+      "Pay Union Credit Card Bill",  "",                              "Other Payments..",
+    ],
+  },
+  {
+    title: "Download Application Forms",
+    cols: 1,
+    items: [
+      "Internet Banking Application",
+      "Addition of more Accounts",
+      "Partnership Firm Declaration",
+      "Company F T Resolution",
+      "HUF & Society Application",
+      "Digital Signature linking form",
+    ],
+  },
+  {
+    title: "Other Services",
+    cols: 1,
+    items: [
+      "Apply loan online",
+      "Mutual Fund & Investment",
+      "Credit Card Overview",
+      "Credit Card",
+      "Trading",
+      "Demat",
+      "ASBA",
+      "Call Centre",
+      "Mobile Banking",
+      "SMS Banking",
+      "Union e-Remit",
+    ],
+  },
+  {
+    title: "Contact Us",
+    cols: 1,
+    items: [],
+  },
+];
