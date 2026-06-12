@@ -25,7 +25,7 @@ const AccountSummary = () => {
           <span style={{ color: "#0645ad", cursor: "pointer" }}>Account Summary</span>
         </div>
         <button style={{ background: "none", border: "none", cursor: "pointer", color: "#555", padding: 0 }}>
-          <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20">
+          <svg width="30" height="30" fill="currentColor" viewBox="0 0 20 20">
             <path fillRule="evenodd" d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a1 1 0 001 1h8a1 1 0 001-1v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a1 1 0 00-1-1H6a1 1 0 00-1 1zm2 0h6v3H7V4zm-1 9v2h8v-2H6zm9-4a1 1 0 11-2 0 1 1 0 012 0zM5 9H4v3h1V9z" clipRule="evenodd" />
           </svg>
         </button>
@@ -64,7 +64,7 @@ const AccountSummary = () => {
           </div>
 
           {/* White content box */}
-          <div style={{ border: "1px solid #ccc", background: "#fff" }}>
+          <div style={{ border: "1px solid #ccc", background: "#fff", width: "95%" }}>
 
             {/* Search row */}
             <div style={{ padding: "7px 8px", borderBottom: "1px solid #ddd" }}>
@@ -83,33 +83,34 @@ const AccountSummary = () => {
             </div>
 
             {/* List label */}
-            <div style={{ padding: "6px 10px", fontSize: "13px", color: "#333", borderBottom: "1px solid #ddd" }}>
+            <div style={{ padding: "6px 10px", fontSize: "16px", color: "#333", borderBottom: "1px solid #ddd" }}>
               Accounts Summary List
             </div>
 
             {/* Table */}
             <table style={{ width: "100%", fontSize: "13px", borderCollapse: "collapse" }}>
               <thead>
-                <tr style={{ borderBottom: "1px solid #ccc" }}>
+                <tr style={{ borderBottom: "1px solid #ccc",backgroundColor: "#f2f2f2" }}>
                   <th style={{ textAlign: "left", padding: "6px 10px", fontWeight: "400", color: "#444", borderRight: "1px dashed #bbb", width: "26%" }}>
                     Account Number<br />
                     <span style={{ color: "#aaa", fontWeight: "400" }}>Account Nickname</span>
                   </th>
                   <th style={{ textAlign: "left", padding: "6px 10px", fontWeight: "400", color: "#444", borderRight: "1px dashed #bbb", width: "13%" }}>Account Type</th>
                   <th style={{ textAlign: "left", padding: "6px 10px", fontWeight: "400", color: "#444", borderRight: "1px dashed #bbb", width: "11%" }}>Status</th>
-                  <th style={{ textAlign: "right", padding: "6px 10px", fontWeight: "400", color: "#444", borderRight: "1px dashed #bbb" }}>Balance</th>
+                  <th style={{ textAlign: "right", padding: "4px 25px", fontWeight: "400", color: "#444", borderRight: "1px dashed #bbb" }}>Balance</th>
                   <th style={{ width: "85px" }}></th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr style={{ borderBottom: "1px solid #e8e8e8" }}>
-                  <td style={{ padding: "7px 10px", borderRight: "1px dashed #bbb", verticalAlign: "top" }}>
+                  <td style={{ padding: "7px 10px", borderRight: "none", verticalAlign: "top" }}>
                     <div style={{ color: "#0645ad", cursor: "pointer", textDecoration: "underline" }} onClick={() => navigate("/account-details")}>621702010002985</div>
                     <div style={{ color: "#999", fontSize: "12px", marginTop: "2px" }}>PRASAD PRADIP WANKHADE</div>
                   </td>
-                  <td style={{ padding: "7px 10px", borderRight: "1px dashed #bbb", verticalAlign: "top", color: "#333" }}>Savings</td>
-                  <td style={{ padding: "7px 10px", borderRight: "1px dashed #bbb", verticalAlign: "top", color: "#333" }}>Active</td>
-                  <td style={{ padding: "7px 10px", borderRight: "1px dashed #bbb", verticalAlign: "top", textAlign: "right" }}>
+                  <td style={{ padding: "7px 10px", borderRight: "none", verticalAlign: "top", color: "#333" }}>Savings</td>
+                  <td style={{ padding: "7px 10px", borderRight: "none", verticalAlign: "top", color: "#333" }}>Active</td>
+                  <td style={{ padding: "7px 10px", borderRight: "none", verticalAlign: "top", textAlign: "right" }}>
                     <div>Total:&nbsp;<span style={{ color: "#777" }}>INR</span>&nbsp;<span style={{ color: "#5a9e00", fontWeight: "600" }}>5,012.40</span></div>
                     <div style={{ marginTop: "2px" }}>Available:&nbsp;<span style={{ color: "#777" }}>INR</span>&nbsp;<span style={{ color: "#5a9e00", fontWeight: "600" }}>5,012.40</span></div>
                   </td>
@@ -157,11 +158,11 @@ const AccountSummary = () => {
         </div>
 
         {/* ── Right panel ── */}
-        <div style={{ width: "200px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "10px", marginTop: "27px" }}>
+        <div style={{ width: "200px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "7px", marginTop: "63px"}}>
 
           {/* Favorites card */}
-          <div style={{ background: "#fff", border: "1px solid #ccc", padding: "12px 14px" }}>
-            <div style={{ fontSize: "13px", fontWeight: "700", color: "#222", marginBottom: "5px" }}>Favorites</div>
+          <div style={{ background: "#fff", border: "1px solid #ccc", padding: "5px 10px" }}>
+            <div style={{ fontSize: "13px", fontWeight: "700", color: "#656565", marginBottom: "5px" }}>Favorites</div>
             <div style={{ fontSize: "12px", color: "#999", marginBottom: "10px" }}>Select your favorite activity</div>
             <div style={{ display: "flex", alignItems: "center", marginBottom: "10px" }}>
               <select style={{ width: "100%", border: "1px solid #bbb", fontSize: "12px", padding: "3px 5px", background: "#fff" }}>
@@ -177,8 +178,8 @@ const AccountSummary = () => {
           </div>
 
           {/* Navigate to card */}
-          <div style={{ background: "#fff", border: "1px solid #ccc", padding: "12px 14px", minHeight: "100px" }}>
-            <div style={{ fontSize: "13px", fontWeight: "700", color: "#222" }}>Navigate to...</div>
+          <div style={{ background: "#fff", border: "1px solid #ccc", padding: "5px 10px", minHeight: "150px" }}>
+            <div style={{ fontSize: "13px", fontWeight: "700", color: "#656565" }}>Navigate to...</div>
           </div>
         </div>
       </div>
