@@ -38,7 +38,7 @@ const DashboardLayout = ({ children }) => {
   };
 
   return (
-    <div className="min-h-screen bg-[#efefef] overflow-hidden flex flex-col">
+    <div style={{ minHeight: "100vh", background: "#efefef", display: "flex", flexDirection: "column" }}>
       {/* Header */}
       <div className="bg-white border-b border-gray-200 flex items-center justify-between flex-shrink-0" style={{ minHeight: "80px", padding: "16px 60px" }}>
         <img src={logo} alt="Union Bank" style={{ height: "50px", objectFit: "contain" }} />
@@ -120,7 +120,7 @@ const DashboardLayout = ({ children }) => {
       </div>
 
       {/* Page Content */}
-      <div className="flex-1 overflow-auto" style={{ padding: "0 60px" }}>
+      <div style={{ flex: 1, padding: "0 60px" }}>
         {children}
       </div>
     </div>
